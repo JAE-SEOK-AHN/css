@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <!-- offset 을 사용하기 위해서는 position type을 static 이외의 값으로 지정해 주어야 함. default가 static. -->
+    <style>
+        html{border:1px solid gray;}
+        div{
+            border:5px solid tomato;
+            margin:10px;
+        }
+        #me{
+            position: relative;
+            left:100px;
+            top:100px;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="other">other</div>
+    <div id="parent">
+       parent
+       <div id="me">me</div>
+    </div>
+  </body>
+</html>
